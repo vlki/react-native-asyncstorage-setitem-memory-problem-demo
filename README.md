@@ -1,5 +1,6 @@
 Sample project demonstrating the memory leak in React Native's `AsyncStorage`
-when passing large string to `setItem`.
+when passing large string to `setItem` and running at iPad Mini 2 (ME800SL/A)
+with iOS 11.0.3.
 
 ```js
 // App.js
@@ -12,7 +13,7 @@ export default class App extends React.Component {
   }
 
   saveHugeString = () => {
-    AsyncStorage.setItem('foo', 'a'.repeat(5000000)).then(() => {
+    AsyncStorage.setItem('foo', 'a'.repeat(50000000)).then(() => {
       setTimeout(this.saveHugeString, 5000)
     })
   }
