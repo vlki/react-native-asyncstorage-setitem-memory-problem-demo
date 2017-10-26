@@ -3,11 +3,13 @@ import { AsyncStorage, StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
   componentDidMount() {
-    setInterval(this.tick, 5000)
+    setTimeout(this.saveHugeString, 5000)
   }
 
-  tick() {
-    AsyncStorage.setItem('foo', 'a'.repeat(5000000))
+  saveHugeString = () => {
+    AsyncStorage.setItem('foo', 'a'.repeat(5000000)).then(() => {
+      setTimeout(this.saveHugeString, 5000)
+    })
   }
 
   render() {
