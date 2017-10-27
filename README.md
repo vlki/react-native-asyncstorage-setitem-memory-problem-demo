@@ -61,7 +61,7 @@ XCode memory usage when running on device (iPad Mini 2 ME800SL/A with iOS
 XCode memory usage when running in simulator (iPad Pro (9.7-inch) with iOS
 11.0.1):
 
-![](./memory-usage-device.png)
+![](./memory-usage-simulator.png)
 
 ```
 $ react-native info
