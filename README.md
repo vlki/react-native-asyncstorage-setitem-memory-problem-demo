@@ -7,6 +7,8 @@ memory gets freed periodically as seen on XCode's memory usage screenshots
 below. Device used: iPad Mini 2 ME800SL/A with iOS 11.0.3. Simulator used:
 iPad Pro (9.7-inch) with iOS 11.0.1.
 
+App on device and in simulator was built with Release build configuration.
+
 Project is ejected `create-react-native-app` with react-native updated to
 latest version 0.49.3.
 
@@ -77,3 +79,15 @@ Packages: (wanted => installed)
   react: 16.0.0 => 16.0.0
   react-native: 0.49.3 => 0.49.3
 ```
+
+## Check yourself
+
+* Clone repository, go to the cloned repo directory
+* Fetch node modules by `npm install`
+* In XCode open the `ios` directory
+* Connect your iOS device to computer
+* Edit your Run scheme and make sure have Build configuration `Release` and
+  `Debug executable` checked
+* Run on your iOS device
+* See the memory usage in XCode's Debug Navigator
+
