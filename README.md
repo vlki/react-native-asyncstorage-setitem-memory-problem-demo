@@ -12,7 +12,7 @@ App on device and in simulator was built with Release build configuration.
 Project is ejected `create-react-native-app` with react-native updated to
 latest version 0.49.3.
 
-`App.js` code to reproduce:
+### `App.js` code to reproduce:
 
 ```js
 import React from 'react';
@@ -53,13 +53,11 @@ export default class App extends React.Component {
 }
 ```
 
-XCode memory usage when running on device (iPad Mini 2 ME800SL/A with iOS
-11.0.3), just seconds before it gets killed by system:
+### XCode memory usage when running on device (iPad Mini 2 ME800SL/A with iOS 11.0.3), just seconds before it gets killed by system:
 
 ![](./memory-usage-device.png)
 
-XCode memory usage when running in simulator (iPad Pro (9.7-inch) with iOS
-11.0.1):
+### XCode memory usage when running in simulator (iPad Pro (9.7-inch) with iOS 11.0.1):
 
 ![](./memory-usage-simulator.png)
 
